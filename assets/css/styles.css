@@ -17,10 +17,12 @@
 
   /*========== Font and Typography ==========*/
   --body-font: "Poppins", sans-serif;
-  --biggest-font-size: 2.25rem;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
+  --h3-font-size: 1.125rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
@@ -30,6 +32,7 @@
   --font-semi-bold: 600;
 
   /*========== Margins ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
   --mb-1: 0.5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
@@ -44,7 +47,7 @@
 
 @media screen and (min-width: 768px) {
   :root {
-    --biggest-font-size: 4rem;
+    --big-font-size: 3rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -93,8 +96,23 @@ img {
 }
 
 /*========== Variables Dark theme ==========*/
+body.dark-theme {
+  --title-color: #f1f3f2;
+  --text-color: #c7d1cc;
+  --body-color: #1d2521;
+  --container-color: #27302d;
+  --logo-dark-color: #f1f3f2;
+}
 
 /*========== Button Dark/Light ==========*/
+.change-theme {
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+  color: var(--text-color);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
 
 /*========== CLASS CSS ==========*/
 .section {
@@ -240,7 +258,7 @@ img {
   align-content: center;
 }
 .home_title {
-  font-size: var(--biggest-font-size);
+  font-size: var(--big-font-size);
   color: var(--first-color);
   margin-bottom: var(--mb-1);
 }
@@ -383,13 +401,10 @@ img {
 }
 .footer_logo {
   color: var(--logo-dark-color);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .footer_logo span {
   margin-top: -0.8rem;
-  color: var(--first-color);
-}
-.footer_logo:hover {
   color: var(--first-color);
 }
 .footer_description {
@@ -423,3 +438,129 @@ img {
 }
 
 /*========== MEDIA QUERIES ==========*/
+@media screen and (min-width: 576px) {
+  .home_container,
+  .about_container,
+  .app_container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .about_data,
+  .about_initial,
+  .app_data,
+  .app_initial,
+  .contact_container,
+  .contact_initial {
+    text-align: initial;
+  }
+
+  .about_img,
+  .app_img {
+    width: 380px;
+    order: -1;
+  }
+
+  .app_store {
+    width: 130px;
+  }
+
+  .contact_container {
+    grid-template-columns: 1.75fr 1fr;
+    align-items: center;
+  }
+  .contact_button {
+    justify-self: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding-top: 8rem;
+  }
+
+  .nav_logo {
+    color: var(--logo-dark-color);
+    font-size: 1.2rem;
+  }
+
+  /* Deixando o header sem menu hambúrguer: */
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav_list {
+    display: flex;
+  }
+  .nav_item {
+    margin-left: var(--mb-5);
+    margin-bottom: 0;
+  }
+  .nav_toggle {
+    display: none;
+  }
+  .change-theme {
+    position: initial;
+    margin-top: 2px;
+    margin-left: 3rem;
+  }
+
+  .home_container {
+    height: 100vh;
+    justify-items: center;
+  }
+  .services_container,
+  .foods_container {
+    margin-top: var(--mb-6);
+  }
+
+  .foods_container {
+    grid-template-columns: repeat(3, 210px);
+  }
+  .foods_content {
+    padding: 1.5rem;
+  }
+  .foods_img {
+    width: 130px;
+  }
+
+  .app_store {
+    margin: 0 var(--mb-1) 0 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .nav_logo {
+    color: var(--logo-dark-color);
+    font-size: 1.3rem;
+  }
+  .nav_logo span {
+    display: block;
+    margin-top: -0.8rem;
+    color: var(--first-color);
+  }
+  .nav_link,
+  .nav_toggle {
+    font-size: var(--small-font-size);
+  }
+
+  .home_title,
+  .home_subtitle {
+    font-size: var(--h1-font-size);
+  }
+
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home_img {
+    width: 500px;
+  }
+
+  .about_container,
+  .app_container {
+    column-gap: 7rem;
+  }
+}
