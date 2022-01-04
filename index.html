@@ -1,40 +1,324 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!--==================== FAVICON ====================-->
+    <link rel="icon" href="assets/img/logo.svg" />
     <!--========== BOX ICONS LIBRARY ==========-->
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
-
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css" />
-
+    <!--========== Title ==========-->
     <title>Uber Eats</title>
+
+    <!--================== LINK THUMBNAIL META TAGS ===================-->
+    <!-- MS Tile - for Microsoft apps-->
+    <meta
+      name="msapplication-TileImage"
+      content="https://raw.githubusercontent.com/Thiagoow/UberEats-Responsive-LandingPage/master/assets/img/logo.svg"
+    />
+    <!-- fb & Whatsapp -->
+    <meta property="og:site_name" content="Uber Eats" />
+    <meta property="og:title" content="🥗 Delivery de comida - Uber Eats" />
+    <meta
+      property="og:description"
+      content="Restaurantes e mercados próximos de você! "
+    />
+    <!-- IMG URL: -->
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/Thiagoow/UberEats-Responsive-LandingPage/master/assets/img/logo.svg"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <!--  size up to 300px. Anything above this will not work in WhatsApp -->
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:url" content="https://thiagosl.netlify.app/" />
   </head>
   <body>
     <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrollTop show-scroll" id="scroll-top">
+      <i class="bx bx-chevron-up scrollTop_icon"></i>
+    </a>
 
     <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="/" class="nav_logo">
+          <b>
+            Uber
+            <span>Eats</span>
+          </b>
+        </a>
+
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#home" class="nav_link">Home</a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">Sobre Nós</a>
+            </li>
+            <li class="nav_item">
+              <a href="#services" class="nav_link">Serviços</a>
+            </li>
+            <li class="nav_item">
+              <a href="#foods" class="nav_link">Comidas</a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">Contate-nos</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
 
     <main class="l-main">
       <!--========== HOME ==========-->
+      <section class="home" id="home">
+        <div class="home_container bd-container bd-grid">
+          <div class="home_data">
+            <h1 class="home_title">Comidas Deliciosas</h1>
+            <h2 class="home_subtitle">Na porta da sua casa! 😍</h2>
+            <a href="#foods" class="button">Pedir Agora</a>
+          </div>
+
+          <img
+            src="assets/img/home.png"
+            alt="Prato de comida saudável"
+            class="home_img"
+          />
+        </div>
+      </section>
 
       <!--========== ABOUT ==========-->
+      <section class="about section bd-container" id="about">
+        <div class="about_container bd-grid">
+          <div class="about_data">
+            <span class="section-subtitle">Sobre Nós</span>
+            <h2 class="section-title">Experimente o melhor da sua região!</h2>
+            <p class="about_description">
+              Com apenas alguns toques na tela, e com o padrão Uber de
+              qualidade, conectamos você com as melhores refeições da sua
+              região! 😎
+            </p>
+            <a href="#app" class="button">Gostou? Veja agora!</a>
+
+            <img
+              src="assets/img/about.jpg"
+              alt="Ingredientes naturais"
+              class="about_img"
+            />
+          </div>
+        </div>
+      </section>
 
       <!--========== SERVICES ==========-->
+      <section class="services section bd-container" id="services">
+        <span class="section-subtitle">Oferecemos para ti</span>
+        <h2 class="section-title">O que fazemos de melhor</h2>
 
-      <!--========== MENU ==========-->
+        <div class="services_container bd-grid">
+          <div class="services_content">
+            <img
+              src="assets/img/dish.svg"
+              class="services_img"
+              alt="Ícone de prato para refeições"
+            />
+            <h3 class="services_title">Comida Excelente</h3>
+            <p class="services_description">
+              Os melhores restaurantes e mercados da sua região são parceiros
+              Uber Eats!
+            </p>
+          </div>
+
+          <div class="services_content">
+            <img
+              src="assets/img/truck.svg"
+              class="services_img"
+              alt="Ícone de prato para refeições"
+            />
+            <h3 class="services_title">Entrega Rápida</h3>
+            <p class="services_description">
+              Os melhores restaurantes e mercados da sua região são parceiros
+              Uber Eats!
+            </p>
+          </div>
+
+          <div class="services_content">
+            <img
+              src="assets/img/pizza.svg"
+              class="services_img"
+              alt="Ícone de prato para refeições"
+            />
+            <h3 class="services_title">Cardápio Muuito Diverso</h3>
+            <p class="services_description">
+              Os melhores restaurantes e mercados da sua região são parceiros
+              Uber Eats!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--========== FOODS ==========-->
+      <section class="foods section bd-container" id="foods">
+        <span class="section-subtitle">Os melhores</span>
+        <h2 class="section-title">Pratos da Semana</h2>
+
+        <div class="foods_container bd-grid">
+          <div class="foods_content">
+            <img src="assets/img/plate1.png" alt="" class="foods_img" />
+            <h3 class="foods_name">Salada & Barbecue</h3>
+            <span class="foods_detail">Refeição saudável</span>
+            <span class="foods_price">R$25.00</span>
+
+            <a href="#" class="button foods_button">
+              <i class="bx bx-cart"></i>
+            </a>
+          </div>
+
+          <div class="foods_content">
+            <img src="assets/img/plate2.png" alt="" class="foods_img" />
+            <h3 class="foods_name">Salada com Abacate</h3>
+            <span class="foods_detail">Refeição saudável</span>
+            <span class="foods_price">R$20.00</span>
+
+            <a href="#" class="button foods_button">
+              <i class="bx bx-cart"></i>
+            </a>
+          </div>
+
+          <div class="foods_content">
+            <img src="assets/img/plate3.png" alt="" class="foods_img" />
+            <h3 class="foods_name">Salada com Cebola</h3>
+            <span class="foods_detail">Refeição saudável</span>
+            <span class="foods_price">R$16.00</span>
+
+            <a href="#" class="button foods_button">
+              <i class="bx bx-cart"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
       <!--===== APP =======-->
+      <section class="app section bd-container" id="app">
+        <div class="app_container bd-grid">
+          <div class="app_data">
+            <span class="section-subtitle app_initial">Comece agora!</span>
+            <h2 class="section-title app_initial">Instale nosso aplicativo</h2>
+            <p class="app_description">
+              Apenas clique abaixo, instale o aplicativo e faça seus pedidos de
+              maneira fácil e intuitiva!
+            </p>
+            <div class="app_stores">
+              <a href="#"
+                ><img
+                  src="assets/img/playStoreDownload.png"
+                  alt=""
+                  class="app_store"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/img/appStoreDownload.svg"
+                  alt=""
+                  class="app_store"
+              /></a>
+            </div>
+          </div>
+
+          <img src="assets/img/movil-app.png" alt="" class="app_img" />
+        </div>
+      </section>
 
       <!--========== CONTACT US ==========-->
+      <section class="contact section bd-container" id="contact">
+        <div class="contact_container bd-grid">
+          <div class="contact_data">
+            <span class="section-subtitle contact_initial"
+              >Vamos conversar?</span
+            >
+            <h2 class="section-title contact_initial">Contate-nos</h2>
+            <p class="contact_description">
+              Precisa de alguma ajuda para usar o aplicativo? Ver seus pedidos
+              ou mais detalhes e opções sobre nossos serviços, contate-nos
+              agora! Estamos online 24h por dia, de Segunda á Domingo! 😉
+            </p>
+          </div>
+
+          <div class="contact_button">
+            <a href="#" class="button">Entrar em Contato</a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+      <div class="footer_container bd-grid">
+        <div class="footer_content">
+          <a href="/" class="footer_logo">
+            <b>
+              Uber
+              <span>Eats</span>
+            </b>
+          </a>
+
+          <span class="footer_description">O melhor serviço, pra você</span>
+
+          <div>
+            <a href="#" class="footer_social"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="#" class="footer_social"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="#" class="footer_social"><i class="bx bxl-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer_content">
+          <h3 class="footer_title">Informações</h3>
+          <ul>
+            <li><a href="#" class="footer_link">Eventos</a></li>
+            <li><a href="#" class="footer_link">Política de Privacidade</a></li>
+            <li><a href="#" class="footer_link">Termos de serviço</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_content">
+          <h3 class="footer_title">Endereço</h3>
+          <ul>
+            <li>São Paulo - Brasil</li>
+            <li>R. Verbo Divino, 1207</li>
+            <li>Chácara Santo Antônio</li>
+          </ul>
+        </div>
+
+        <div class="footer_content">
+          <h3 class="footer_title">Navegação</h3>
+          <ul>
+            <li><a href="#app" class="footer_link">Download</a></li>
+            <li><a href="#contact" class="footer_link">Contate-nos</a></li>
+            <li><a href="#foods" class="footer_link">Pratos da semana</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer_copy">
+        &#169; Feito em 2022, por
+        <a href="" class="footer_link" target="_blank"> Thiago Silva Lopes </a>
+      </p>
+    </footer>
 
     <!--========== SCROLL REVEAL LIBRARY ==========-->
     <script src="https://unpkg.com/scrollreveal"></script>
