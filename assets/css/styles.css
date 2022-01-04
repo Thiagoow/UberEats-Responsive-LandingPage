@@ -12,7 +12,7 @@
   --logo-dark-color: #162328;
   --text-color: #707070;
   --text-color-light: #a6a6a6;
-  --body-color: #fbfefd;
+  --body-color: #f1f1f1;
   --container-color: #ffffff;
 
   /*========== Font and Typography ==========*/
@@ -99,8 +99,8 @@ img {
 body.dark-theme {
   --title-color: #f1f3f2;
   --text-color: #c7d1cc;
-  --body-color: #1d2521;
-  --container-color: #27302d;
+  --body-color: #142328;
+  --container-color: #1a2e35;
   --logo-dark-color: #f1f3f2;
 }
 
@@ -166,14 +166,14 @@ body.dark-theme {
   .nav_menu {
     position: fixed;
     top: -100%;
-    left: 5%;
-    width: 90%;
+    left: 10%;
+    width: 80%;
     padding: 1.5rem 0 1rem;
     text-align: center;
-    background-color: var(--body-color);
+    background-color: var(--container-color);
     transition: 0.4s;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 1rem;
     z-index: var(--z-fixed);
   }
 }
@@ -210,7 +210,7 @@ body.dark-theme {
 
 /* Show Menu */
 .show-menu {
-  top: calc(var(--header-height) - 1px);
+  top: calc(var(--header-height) + 0.5rem);
 }
 
 /* Active Menu */
@@ -254,6 +254,7 @@ body.dark-theme {
 
 /*========== HOME ==========*/
 .home_container {
+  margin-top: -1rem;
   height: calc(100vh - var(--header-height));
   align-content: center;
 }
@@ -438,7 +439,12 @@ body.dark-theme {
 }
 
 /*========== MEDIA QUERIES ==========*/
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
+  .home_container {
+    margin-top: -1rem;
+  }
+}
+@media screen and (min-width: 590px) {
   .home_container,
   .about_container,
   .app_container {
@@ -504,12 +510,15 @@ body.dark-theme {
   .change-theme {
     position: initial;
     margin-top: 2px;
-    margin-left: 3rem;
+    margin-left: 2.5rem;
   }
 
   .home_container {
     height: 100vh;
     justify-items: center;
+  }
+  .home_container {
+    margin-bottom: -3rem;
   }
   .services_container,
   .foods_container {
@@ -531,6 +540,10 @@ body.dark-theme {
   }
 }
 @media screen and (min-width: 960px) {
+  .home_container {
+    margin-top: 1rem;
+  }
+
   .nav_logo {
     color: var(--logo-dark-color);
     font-size: 1.3rem;
