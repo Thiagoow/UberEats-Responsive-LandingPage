@@ -14,6 +14,7 @@
   --text-color-light: #a6a6a6;
   --body-color: #f1f1f1;
   --container-color: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
 
   /*========== Font and Typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -102,6 +103,7 @@ body.dark-theme {
   --body-color: #142328;
   --container-color: #1a2e35;
   --logo-dark-color: #f1f3f2;
+  --shadow-color: rgba(214, 214, 214, 0.1);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -172,7 +174,7 @@ body.dark-theme {
     text-align: center;
     background-color: var(--container-color);
     transition: 0.4s;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 4px var(--shadow-color);
     border-radius: 1rem;
     z-index: var(--z-fixed);
   }
@@ -220,7 +222,7 @@ body.dark-theme {
 
 /* Change background header */
 .scroll-header {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 /* Scroll Top */
@@ -297,7 +299,6 @@ body.dark-theme {
   width: 280px;
   border-radius: 0.5rem;
   justify-self: center;
-  margin-top: var(--mb-3);
 }
 
 /*========== SERVICES ==========*/
@@ -336,7 +337,7 @@ body.dark-theme {
   flex-direction: column;
   background-color: var(--container-color);
   border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
+  box-shadow: 0 2px 4px var(--shadow-color);
   padding: 0.75rem;
 }
 .foods_img {
