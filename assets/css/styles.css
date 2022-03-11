@@ -627,6 +627,7 @@ body.dark-theme {
 
   .home_img {
     width: 500px;
+    margin-top: var(--mb-1);
   }
 
   .about_container,
