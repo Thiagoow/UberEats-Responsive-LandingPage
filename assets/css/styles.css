@@ -99,7 +99,7 @@ img {
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --title-color: #fff;
-  --text-color: #cfcfcf;
+  --text-color: #e8e8e8;
   --text-color-light: #838385;
   --body-color: #111f24;
   --container-color: #172a31;
