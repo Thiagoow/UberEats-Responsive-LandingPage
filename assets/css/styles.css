@@ -8,12 +8,12 @@
   /*========== Colors ==========*/
   --first-color: #3fc060;
   --first-color-alt: #048654;
-  --title-color: #393939;
+  --title-color: #232323;
   --logo-dark-color: #162328;
-  --text-color: #707070;
-  --text-color-light: #a6a6a6;
-  --body-color: #f1f1f1;
-  --container-color: #ffffff;
+  --text-color: #000;
+  --text-color-light: #6c6c6c;
+  --body-color: #f2f2f2;
+  --container-color: #fdfdfd;
   --shadow-color: rgba(0, 0, 0, 0.1);
 
   /*========== Font and Typography ==========*/
@@ -98,8 +98,9 @@ img {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --title-color: #f1f3f2;
-  --text-color: #c7d1cc;
+  --title-color: #fff;
+  --text-color: #cfcfcf;
+  --text-color-light: #838385;
   --body-color: #142328;
   --container-color: #1a2e35;
   --logo-dark-color: #f1f3f2;
@@ -118,7 +119,7 @@ body.dark-theme {
 
 /*========== CLASS CSS ==========*/
 .section {
-  padding: 4rem 0 2rem;
+  padding: 7rem 0 2rem;
 }
 .section-title,
 .section-subtitle {
@@ -476,6 +477,22 @@ body.dark-theme {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
   margin-top: 3.5rem;
+}
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: 0.62rem;
+  background-color: var(--container-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--first-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--first-color-alt);
 }
 
 /*========== MEDIA QUERIES ==========*/
