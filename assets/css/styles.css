@@ -101,8 +101,8 @@ body.dark-theme {
   --title-color: #fff;
   --text-color: #cfcfcf;
   --text-color-light: #838385;
-  --body-color: #142328;
-  --container-color: #1a2e35;
+  --body-color: #111f24;
+  --container-color: #172a31;
   --logo-dark-color: #f1f3f2;
   --shadow-color: rgba(214, 214, 214, 0.1);
 }
@@ -181,7 +181,7 @@ body.dark-theme {
   }
 }
 .nav_item {
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-3);
 }
 .nav_link {
   color: var(--text-color);
