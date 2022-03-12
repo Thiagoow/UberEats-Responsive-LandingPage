@@ -187,7 +187,7 @@ body.dark-theme {
   color: var(--text-color);
   font-weight: var(--font-medium);
 }
-.hidden_link {
+.hidden_item {
   display: none;
 }
 .menu {
