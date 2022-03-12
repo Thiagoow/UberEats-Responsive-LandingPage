@@ -187,6 +187,9 @@ body.dark-theme {
   color: var(--text-color);
   font-weight: var(--font-medium);
 }
+.hidden_link {
+  display: none;
+}
 .menu {
   background-color: transparent;
   border: none;
@@ -252,7 +255,7 @@ body.dark-theme {
 
 /* Show Menu */
 .show-menu {
-  top: calc(var(--header-height) + 0.5rem);
+  top: calc(var(--header-height) + 1rem);
 }
 
 /* Active Menu */
